@@ -16,6 +16,10 @@ public class EricShowingConcepts {
 //        someRandomInventory.add(vehicle2);
 
 
+        DealershipFileManager myDealershipFileManager = new DealershipFileManager();
+
+        myDealershipFileManager.getDealership();
+
 
     }
 
