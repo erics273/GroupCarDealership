@@ -6,7 +6,7 @@ public class EricShowingConcepts {
 
     public static void main(String[] args) {
         Dealership myAwesomeCarDealershipWHereWeDOntRipPeopleOff = new Dealership("Erics Autorama", "123 fake street", "555-555-555");
-        myAwesomeCarDealershipWHereWeDOntRipPeopleOff.
+
 //       ArrayList<Vehicle> someRandomInventory = new ArrayList<Vehicle>();
 //
 //       Vehicle vehicle1 = new Vehicle();

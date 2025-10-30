@@ -23,7 +23,7 @@ public class Dealership {
 
     }
 
-    //our search vehicle methods
+    //our search vehicle methods to search our inventory
     public ArrayList<Vehicle> getVehiclesByPrice(double min, double max){
         return null;
     }
@@ -48,14 +48,17 @@ public class Dealership {
         return null;
     }
 
+    //hands back the entire list of inventory
     public ArrayList<Vehicle> getAllVehicles(){
         return this.inventory;
     }
 
+    //puts a vehicle on the inventory list
     public void addVehicle(Vehicle vehicle){
         this.inventory.add(vehicle);
     }
 
+    //will eventually remove cars from the inventory
     public void removeVehicle(Vehicle vehicle){
 
     }
