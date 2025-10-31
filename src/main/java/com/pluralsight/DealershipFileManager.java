@@ -66,7 +66,9 @@ public class DealershipFileManager {
             //close the reader
             inventoryReader.close();
 
+
         } catch (IOException e) {
+
           //  do this stuff if the stuff in the try fails
             System.out.println("something went wrong " + e.getMessage());
             System.exit(0);
