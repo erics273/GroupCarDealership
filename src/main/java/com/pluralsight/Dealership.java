@@ -25,7 +25,20 @@ public class Dealership {
 
     //our search vehicle methods to search our inventory
     public ArrayList<Vehicle> getVehiclesByPrice(double min, double max){
-        return null;
+        //list to hold the results
+        ArrayList<Vehicle> results = new ArrayList<Vehicle>();
+
+        //add any vehicles from our inventory that match the passed in color to the results list
+        for(Vehicle currentVehicle : this.inventory){
+
+            //only add to results if the color of the car matched the color passed into this method
+            if(currentVehicle.getPrice() >= min && currentVehicle.getPrice() <= max){
+                results.add(currentVehicle);
+            }
+
+        }
+
+        return results;
     }
 
     public ArrayList<Vehicle> getVehiclesByMakeModel(String make, String model){
@@ -33,7 +46,20 @@ public class Dealership {
     }
 
     public ArrayList<Vehicle> getVehiclesByYear(int min, int max){
-        return null;
+        //list to hold the results
+        ArrayList<Vehicle> results = new ArrayList<Vehicle>();
+
+        //add any vehicles from our inventory that match the passed in color to the results list
+        for(Vehicle currentVehicle : this.inventory){
+
+            //only add to results if the color of the car matched the color passed into this method
+            if(currentVehicle.getYear() >= min && currentVehicle.getYear() <= max){
+                results.add(currentVehicle);
+            }
+
+        }
+
+        return results;
     }
 
     //should return a list of vehicles from the inventory that are of the color passed in

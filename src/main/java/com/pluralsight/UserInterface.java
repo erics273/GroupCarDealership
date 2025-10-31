@@ -73,7 +73,21 @@ public class UserInterface {
     }
 
     public void processGetByPriceRequest(){
+        //create a scanner
+        Scanner theScanner = new Scanner(System.in);
 
+        //ask the user what color they are looking for
+        System.out.println("What is the min price: ");
+
+        //store the answer
+        double minPrice = theScanner.nextDouble();
+
+        System.out.println("What is the max price: ");
+
+        //store the answer
+        double maxPrice = theScanner.nextDouble();
+
+        this.displayVehicles(dealership.getVehiclesByPrice(minPrice, maxPrice));
     }
 
     public void processGetByMakeModelRequest(){
@@ -82,6 +96,21 @@ public class UserInterface {
 
     public void processGetByYearRequest(){
 
+        //create a scanner
+        Scanner theScanner = new Scanner(System.in);
+
+        //ask the user what color they are looking for
+        System.out.println("What is the min year: ");
+
+        //store the answer
+        int minYear = theScanner.nextInt();
+
+        System.out.println("What is the max year: ");
+
+        //store the answer
+        int maxYear = theScanner.nextInt();
+
+        this.displayVehicles(dealership.getVehiclesByYear(minYear, maxYear));
     }
 
     public void processGetByColorRequest(){
