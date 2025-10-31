@@ -54,7 +54,7 @@ public class UserInterface {
                 case 6: this.processGetVehicleType(); break;
                 case 7: this.processGetAllVehiclesRequest(); break;
                 case 8: this.processAddVehicleRequest(); break;
-                case 9: this.processRemoveVehicleRequest();
+                case 9: this.processRemoveVehicleRequest(); break;
                 case 99:
                     //the user chose to quit
                     //say goodbye
@@ -125,7 +125,8 @@ public class UserInterface {
 
         //we need to loop over all those vehicles to display
         for(Vehicle currentVehicle : theVehicles){
-            System.out.println(currentVehicle);
+            //call the toString method so we get a nice display of the vehicle data
+            System.out.println(currentVehicle.toString());
         }
 
     }

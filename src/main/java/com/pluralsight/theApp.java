@@ -1,8 +1,6 @@
 package com.pluralsight;
 
-import java.util.ArrayList;
-
-public class EricShowingConcepts {
+public class theApp {
 
     public static void main(String[] args) {
 
