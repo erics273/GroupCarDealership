@@ -18,7 +18,13 @@ public class EricShowingConcepts {
 
         DealershipFileManager myDealershipFileManager = new DealershipFileManager();
 
-        myDealershipFileManager.getDealership();
+      //  myDealershipFileManager.FILE_PATH = "salfkjdlkjf";
+
+        Dealership myDealership = myDealershipFileManager.getDealership();
+
+        System.out.println(myDealership.getName());
+
+        System.out.println(myDealership.getAllVehicles().size());
 
 
     }

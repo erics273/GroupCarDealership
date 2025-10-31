@@ -63,4 +63,7 @@ public class Dealership {
 
     }
 
+    public String getName() {
+        return name;
+    }
 }
