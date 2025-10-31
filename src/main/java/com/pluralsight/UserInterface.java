@@ -86,6 +86,19 @@ public class UserInterface {
 
     public void processGetByColorRequest(){
 
+        //create a scanner
+        Scanner theScanner = new Scanner(System.in);
+
+        //ask the user what color they are looking for
+        System.out.println("What color are you looking for: ");
+
+        //store the answer
+        String theColor = theScanner.nextLine();
+
+        ArrayList<Vehicle> matches = dealership.getVehiclesByColor(theColor);
+
+        this.displayVehicles(matches);
+
     }
 
     public void processGetByMileageRequest(){

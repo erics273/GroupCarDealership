@@ -36,8 +36,24 @@ public class Dealership {
         return null;
     }
 
+    //should return a list of vehicles from the inventory that are of the color passed in
     public ArrayList<Vehicle> getVehiclesByColor(String color){
-        return null;
+
+        //list to hold the results
+        ArrayList<Vehicle> results = new ArrayList<Vehicle>();
+
+        //add any vehicles from our inventory that match the passed in color to the results list
+        for(Vehicle currentVehicle : this.inventory){
+
+            //only add to results if the color of the car matched the color passed into this method
+            if(currentVehicle.getColor().equalsIgnoreCase(color)){
+                results.add(currentVehicle);
+            }
+
+        }
+
+        return results;
+
     }
 
     public ArrayList<Vehicle> getVehicleByMileage(int min, int max){
