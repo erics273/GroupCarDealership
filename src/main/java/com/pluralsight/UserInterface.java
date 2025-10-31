@@ -95,9 +95,7 @@ public class UserInterface {
         //store the answer
         String theColor = theScanner.nextLine();
 
-        ArrayList<Vehicle> matches = dealership.getVehiclesByColor(theColor);
-
-        this.displayVehicles(matches);
+        this.displayVehicles(dealership.getVehiclesByColor(theColor));
 
     }
 
@@ -106,7 +104,16 @@ public class UserInterface {
     }
 
     public void processGetVehicleType(){
+        //create a scanner
+        Scanner theScanner = new Scanner(System.in);
 
+        //ask the user what color they are looking for
+        System.out.println("What type of vehicle (Car, Truck, SUV):  ");
+
+        //store the answer
+        String theType = theScanner.nextLine();
+
+        this.displayVehicles(dealership.getVehiclesByType(theType));
     }
 
     public void processGetAllVehiclesRequest(){
